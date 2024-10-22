@@ -25,7 +25,7 @@ export default function LayoutHome() {
     <div className={css.layout}>
       <Header />
 
-      <div>
+      <div className={css.card_content}>
         {arrayPokemon.map((card, index) => (
           // Renderiza el componente Card y pasa los datos de cada Pokémon
           <Card key={index} card={card} />
