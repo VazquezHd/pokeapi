@@ -5,10 +5,26 @@
     flex-direction: column;
     position: relative;
 
+    transition: all 0.3s ease-in-out;
+
+
+    &:hover{
+        transform: scale(1.05);
+        transition-duration: 200ms;
+
+        >img{
+            margin-top: -20px;
+            transform: scale(1.15);
+            transition-duration: 300ms;
+            filter: drop-shadow(1px 3px 0px black);
+        }
+    }
+
     .img_poke{
         width: 160px;
         margin: 0 auto;
         z-index: 20;
+        transition: all 0.3s ease-in-out;
 
     }
 
@@ -101,7 +117,23 @@
     }
 }
 
+.div_type_color{
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
 
+}
+
+.color_type{
+    border: 1px solid #424242;
+    border-radius: 4px;
+    text-align: center;
+    height: 20px;
+    line-height: 17px;
+    width: 50px;
+    color: white;
+
+}
 
 
 }
